@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".ChronometerActivity"
     android:background="@color/appTheme">
 
     <Chronometer
@@ -35,27 +35,28 @@
 
     <ImageView
         android:id="@+id/imageReset"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageStart"
         app:layout_constraintTop_toBottomOf="@+id/imageStart"
+        app:layout_constraintVertical_bias="0.409"
         app:srcCompat="@drawable/reset" />
 
     <Button
         android:id="@+id/buttonStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
         android:text="START"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:background="@android:color/transparent"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageStart"
         app:layout_constraintEnd_toEndOf="@+id/imageStart"
         app:layout_constraintStart_toStartOf="@+id/imageStart"
-        app:layout_constraintTop_toTopOf="@+id/imageStart"
-        android:visibility="visible"/>
+        app:layout_constraintTop_toTopOf="@+id/imageStart" />
 
     <Button
         android:id="@+id/buttonPause"
